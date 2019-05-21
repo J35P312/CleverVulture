@@ -1,6 +1,8 @@
 # CleverVulture
 WiseCondorX Singularity container
 
+The container  also contain biobambam2
+
 more info on:
 
 https://www.singularity-hub.org/collections/2916
