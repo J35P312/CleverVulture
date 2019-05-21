@@ -29,3 +29,4 @@ LC_ALL=C.UTF-8
     conda install -c bioconda/label/cf201901 wisecondorx
     conda install r-ichorcna
     conda install -c bioconda samtools bwa sambamba minimap2
+    conda install -c bioconda biobambam 
