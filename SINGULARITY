@@ -34,6 +34,7 @@ LC_ALL=C.UTF-8
 
     wget https://github.com/VUmcCGP/wisecondor/archive/v2.0.1.tar.gz
     tar -xvf v2.0.1.tar.gz
+    sudo apt-get install python2.7 python-numpy python-matplotlib python-biopython samtools
     pip install sklearn numpy scipy matplotlib pysam futures
     cd wisecondor-2.0.1/ && ./run.sh
 
