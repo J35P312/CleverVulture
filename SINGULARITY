@@ -31,3 +31,9 @@ LC_ALL=C.UTF-8
     conda install r-ichorcna
     conda install -c bioconda samtools bwa sambamba minimap2
     conda install -c bioconda biobambam 
+
+    wget https://github.com/VUmcCGP/wisecondor/archive/v2.0.1.tar.gz
+    tar -xvf v2.0.1.tar.gz
+    pip install sklearn numpy scipy matplotlib pysam futures
+    cd wisecondor-2.0.1/ && ./run.sh
+
