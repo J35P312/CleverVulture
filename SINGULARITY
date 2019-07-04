@@ -33,8 +33,8 @@ LC_ALL=C.UTF-8
     conda install -c bioconda biobambam 
 
     wget https://github.com/VUmcCGP/wisecondor/archive/v2.0.1.tar.gz
-    tar -xvf v2.0.1.tar.gz
+    #tar -xvf v2.0.1.tar.gz
     apt-get install python2.7 python-numpy python-matplotlib python-biopython samtools
     pip install sklearn numpy scipy matplotlib pysam futures
-    cd wisecondor-2.0.1/ && ./run.sh
-
+    #cd wisecondor-2.0.1/ && ./run.sh
+    git clone https://github.com/VUmcCGP/wisecondor.git    
