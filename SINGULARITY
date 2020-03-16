@@ -36,7 +36,7 @@ LC_ALL=C.UTF-8
     conda install -c conda-forge r-base
     conda install -c r r-doparallel r-foreach r-neuralnet r-glmnet r-data.table r-mass
 
-    pip install sklearn numpy scipy matplotlib pysam futures bottleneck
+    pip install sklearn numpy scipy matplotlib pysam futures bottleneck cython
     cd /bin/ &&  git clone https://github.com/VUmcCGP/wisecondor.git    
     
     cd /bin/ && wget https://github.com/CenterForMedicalGeneticsGhent/PREFACE/archive/v0.1.1.zip && unzip v0.1.1.zip
