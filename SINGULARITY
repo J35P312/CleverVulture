@@ -13,7 +13,7 @@ LC_ALL=C.UTF-8
 %post
     echo "Hello from inside the container"
     apt-get update
-    apt-get -y install wget git bzip2 build-essential gcc zlib1g-dev language-pack-en-base apt-transport-https make cmake unzip python3 sudo
+    apt-get -y install wget git bzip2 build-essential gcc zlib1g-dev language-pack-en-base apt-transport-https make cmake unzip python3 sudo python2.7 python-numpy python-matplotlib python-biopython samtools
     update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
 
     cd /root/ && wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
@@ -36,15 +36,11 @@ LC_ALL=C.UTF-8
     conda install -c conda-forge r-base
     conda install -c r r-doparallel r-foreach r-neuralnet r-glmnet r-data.table r-mass
 
-    wget https://github.com/VUmcCGP/wisecondor/archive/v2.0.1.tar.gz
-    #tar -xvf v2.0.1.tar.gz
-    apt-get install python2.7 python-numpy python-matplotlib python-biopython samtools
     pip install sklearn numpy scipy matplotlib pysam futures bottleneck
-    #cd wisecondor-2.0.1/ && ./run.sh
-    git clone https://github.com/VUmcCGP/wisecondor.git    
+    cd /bin/ &&  git clone https://github.com/VUmcCGP/wisecondor.git    
     
     cd /bin/ && wget https://github.com/CenterForMedicalGeneticsGhent/PREFACE/archive/v0.1.1.zip && unzip v0.1.1.zip
     cd /
     
-   cd /bin/ && git clone https://github.com/J35P312/AMYCNE.git && cd AMYCNE && python setup.py build_ext --inplace
+    cd /bin/ && git clone https://github.com/J35P312/AMYCNE.git && cd AMYCNE && python setup.py build_ext --inplace
     
