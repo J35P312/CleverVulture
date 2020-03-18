@@ -31,7 +31,7 @@ LC_ALL=C.UTF-8
     pip install -U git+https://github.com/CenterForMedicalGeneticsGhent/WisecondorX
     conda install r-ichorcna
     conda install -c bioconda samtools bwa sambamba minimap2
-    conda install -c bioconda biobambam tiddit
+    conda install -c bioconda biobambam
     
     conda install -c conda-forge r-base
     conda install -c r r-doparallel r-foreach r-neuralnet r-glmnet r-data.table r-mass
@@ -43,4 +43,9 @@ LC_ALL=C.UTF-8
     cd /
     
     cd /bin/ && git clone https://github.com/J35P312/AMYCNE.git && cd AMYCNE && python setup.py build_ext --inplace
+    
+    git clone https://github.com/SciLifeLab/TIDDIT.git
+    mv TIDDIT/* /bin/
+    cd /bin/ && ./INSTALL.sh
+    chmod +x /bin/TIDDIT.py
     
